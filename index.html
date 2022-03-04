@@ -6,20 +6,20 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-black">
-        <header>
-            icon
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-            icon 
-            icon
-            icon
-            <div>
-                img
-                icon
+        <header class="flex xl:flex-row flex-nowrap justify-between">
+            <div class="flex xl:flex-nowrap">
+                <div class="flex justify-center xl:justify-start pl-10">
+                    <img src="./assets/img/Netflix-Logo.png" class="h-16"/>
+                </div>
+                <div class="invisible xl:visible text-xs text-white flex justify-items-end items-center">
+                    <ul class="hover:cursor-default">
+                        <a class="pl-5 font-extrabold hover:cursor-default">Acceuil</a>
+                        <a class="pl-5 hover:text-slate-300 cursor-pointer">Séries</a>
+                        <a class="pl-5 hover:text-slate-300 cursor-pointer">Films</a>
+                        <a class="pl-5 hover:text-slate-300 cursor-pointer">Nouveautés les plus regardées</a>
+                        <a class="pl-5 hover:text-slate-300 cursor-pointer">Ma liste</a>
+                    </ul>
+                </div>
             </div>
         </header>
     </body>

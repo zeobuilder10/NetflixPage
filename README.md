@@ -5,6 +5,8 @@ a recreation of the main netflix page
 
 I tried My damn best yet the responsive just isn't working, It is too late However to go back and do it now. I'll just have to correct it next week.
 
+Also "hover:" doesen't seem to work with my buttons which seems to always be displaying what's in the hover so basically i'm going crazy
+ 
 ---------------------------
 
 here is the guide I used to create my header, from my Netflix account:

@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body class="bg-black">
-        <header class="flex xl:flex-row flex-nowrap justify-between">
+    <body>
+        <header class="flex bg-gradient-to-b from-black absolute w-full xl:flex-row flex-nowrap justify-between">
             <div class="flex xl:flex-nowrap">
-                <div class="flex justify-center xl:justify-start pl-10">
+                <div class="flex justify-center self-center xl:justify-start pl-10">
                     <img src="./assets/img/Netflix-Logo.png" class="h-16">
                 </div>
                 <div class="invisible xl:visible text-xs text-white flex justify-items-end items-center">
@@ -27,5 +28,17 @@
                 <img src="./assets/img/profileP.png" class="h-11 rounded-md">
             </div>
         </header>
+        <div 
+        class="w-full h-screen bg-no-repeat bg-cover"
+        style="background-image: url('./assets/img/backgroundI.jpg');"
+        ></div>
+        <div>
+            <img src="./assets/img/TitleI.png">
+            <p>A la mort de leur père, des frères et soeurs aux pouvoirs extraordinaires découvrent des secrets de famille traumatisants et une menace terrible qui plane sur l'humanité</p>
+            <div>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
     </body>
 </html>

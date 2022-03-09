@@ -6,8 +6,10 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <header class="flex bg-gradient-to-b from-black absolute w-full xl:flex-row flex-nowrap justify-between">
+
+
+    <body class="bg-black overflow-x-hidden">
+        <header class="flex bg-gradient-to-b from-black fixed w-full xl:flex-row flex-nowrap justify-between">
             <div class="flex xl:flex-nowrap">
                 <div class="flex justify-center self-center xl:justify-start pl-10">
                     <img src="./assets/img/Netflix-Logo.png" class="h-16">
@@ -28,24 +30,76 @@
                 <img src="./assets/img/profileP.png" class="h-11 rounded-md">
             </div>
         </header>
-        <div 
-        class="static w-full h-screen bg-no-repeat bg-cover"
-        style="background-image: url('./assets/img/backgroundI.jpg');"
-        >
-            <div class="static w-1/3 h-96 flex flex-col gap-4 pt-48 pl-10">
-                <img src="./assets/img/TitleI.png">
-                <p class="text-white">A la mort de leur père, des frères et soeurs aux pouvoirs extraordinaires découvrent des secrets de famille traumatisants et une menace terrible qui plane sur l'humanité</p>
-                <div class="flex flex-nowrap grow gap-2 justify-start h-5">
-                    <button class="bg-white p-4 rounded-md flex flex-nowrap justify-center items-center">
-                        <img src="./assets/img/play-svgrepo-com.svg" class="h-6">
-                        <span>Lecture</span>
-                    </button>
-                    <button class="bg-gray-800 p-4 rounded-md flex flex-nowrap gap-2 opacity-75 justify-center items-center">
-                        <img src="./assets/img/info-svgrepo-com.svg" class="h-6 opacity-100">
-                        <span class="opacity-100 text-white">Plus d'infos</span>
-                    </button>
-                </div>
-            </div> 
+
+
+        <div>
+            <div class="w-full h-16 bottom-0 absolute bg-gradient-to-t from-black"></div>
+            <div 
+            class="static w-full h-screen bg-no-repeat bg-cover"
+            style="background-image: url('./assets/img/backgroundI.jpg');"
+            >
+                <div class="static w-1/3 h-96 flex flex-col gap-4 pt-48 pl-10">
+                    <img src="./assets/img/TitleI.png">
+                    <p class="text-white">A la mort de leur père, des frères et soeurs aux pouvoirs extraordinaires découvrent des secrets de famille traumatisants et une menace terrible qui plane sur l'humanité</p>
+                    <div class="flex flex-nowrap grow gap-2 justify-start h-5">
+                        <button class="bg-white p-4 rounded-md flex flex-nowrap justify-center items-center">
+                            <img src="./assets/img/play-svgrepo-com.svg" class="h-6">
+                            <span>Lecture</span>
+                        </button>
+                        <button class="bg-gray-800 p-4 rounded-md flex flex-nowrap gap-2 opacity-75 justify-center items-center">
+                            <img src="./assets/img/info-svgrepo-com.svg" class="h-6 opacity-100">
+                            <span class="opacity-100 text-white">Plus d'infos</span>
+                        </button>
+                    </div>
+                </div> 
+            </div>
         </div>
+        
+
+        <main>
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">My list</p>
+                <div class="flex flex-row overflow-x-auto">
+                    <img src="./assets/img/Content_1.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_2.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_4.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_9.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_5.jpg" class="h-44 w-72 pr-5">
+                </div>
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">TV Shows</p>
+                <div class="flex flex-row overflow-x-auto">
+                    <img src="./assets/img/Content_11.webp" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_7.webp" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_12.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_13.webp" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_14.jpg" class="h-44 w-72 pr-5">
+                </div>
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">Netflix Originals</p>
+                <div class="flex flex-row overflow-x-auto">
+                    <img src="./assets/img/Content_6.webp" class="h-96 w-72 pr-5">
+                    <img src="./assets/img/Content_2.jpg" class="h-96 w-72 pr-5">
+                    <img src="./assets/img/Content_4.jpg" class="h-96 w-72 pr-5">
+                    <img src="./assets/img/Content_9.jpg" class="h-96 w-72 pr-5">
+                    <img src="./assets/img/Content_5.jpg" class="h-96 w-72 pr-5">
+                </div>
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">Top 10</p>
+                <div class="flex flex-row overflow-x-auto">
+                    <img src="./assets/img/Content_10.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_8.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_4.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_9.jpg" class="h-44 w-72 pr-5">
+                    <img src="./assets/img/Content_5.jpg" class="h-44 w-72 pr-5">
+                </div>
+            </section>
+        </main>
     </body>
 </html>

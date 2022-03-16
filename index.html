@@ -13,9 +13,6 @@
 
 
     <body class="bg-black overflow-x-hidden">
-        <script src="./assets/main.js"></script>
-
-
         <header class="flex bg-gradient-to-b from-black fixed w-full xl:flex-row flex-nowrap justify-between z-50">
             <section class="flex xl:flex-nowrap">
                 <div class="flex justify-center self-center xl:justify-start pl-10">
@@ -65,12 +62,13 @@
 
         <main>
             <section class="pl-10 pt-16">
+                <script src="./assets/main.js"></script>
                 <p class="text-white font-bold">My list</p>
                 <div class="flex items-center">
-                    <button class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
+                    <button id="arrowLeft" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
                         <img src="./assets/img/left-arrow-svgrepo-com.svg">
                     </button>                    
-                    <div class="flex flex-row overflow-x-auto z-10">
+                    <div id="carousel" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
@@ -82,21 +80,36 @@
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                     </div>
-                    <button class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
+                    <button id="arrowRight" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
                         <img src="./assets/img/right-arrow-svgrepo-com.svg">
                     </button>                    
                 </div>  
             </section>
 
             <section class="pl-10 pt-16">
+                <script src="./assets/main.js"></script>
                 <p class="text-white font-bold">TV Shows</p>
-                <div class="flex flex-row overflow-x-auto">
-                    <img src="./assets/img/thumbnails/Content_11.webp" class="h-44 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_7.webp" class="h-44 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_12.jpg" class="h-44 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_13.webp" class="h-44 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_14.jpg" class="h-44 w-72 pr-5">
+                <div class="flex items-center">
+                    <button id="arrowLeft" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_11.webp" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_7.webp" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_12.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_13.webp" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_14.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_12.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_13.webp" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_14.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_11.webp" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_7.webp" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button> 
                 </div>
+                
             </section>
 
             <section class="pl-10 pt-16 pr-14">

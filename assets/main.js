@@ -1,11 +1,15 @@
 function buttonLeft(){
-    !alert("fuck")
+    const button = document.getElementById('arrowLeft')
+
+    button.onclick = function(){
+        document.getElementById('carousel').scrollLeft -= 1500;
+    }
 }
 
 function buttonRight(){
-    const select = document.querySelector();
+    const button = document.getElementById('arrowRight')
 
-    select.addEventListener('click', function(event){
-
-    })
+    button.onclick = function(){
+        document.getElementById('carousel').scrollLeft += 1500;
+    }
 }

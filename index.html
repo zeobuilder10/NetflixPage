@@ -13,6 +13,9 @@
 
 
     <body class="bg-black overflow-x-hidden">
+        <script src="./assets/main.js"></script>
+
+
         <header class="flex bg-gradient-to-b from-black fixed w-full xl:flex-row flex-nowrap justify-between z-50">
             <section class="flex xl:flex-nowrap">
                 <div class="flex justify-center self-center xl:justify-start pl-10">
@@ -63,10 +66,11 @@
         <main>
             <section class="pl-10 pt-16">
                 <p class="text-white font-bold">My list</p>
-                <button></button>
-                <div>
-                    <button></button>
-                    <div class="flex flex-row overflow-x-auto">
+                <div class="flex items-center">
+                    <button class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div class="flex flex-row overflow-x-auto z-10">
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
@@ -78,8 +82,10 @@
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                     </div>
-                    <button></button>
-                </div>
+                    <button class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
             </section>
 
             <section class="pl-10 pt-16">

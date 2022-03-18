@@ -65,12 +65,10 @@
             <section class="pl-10 pt-16">
                 <p class="text-white font-bold">My list</p>
                 <div class="flex items-center">
-                    <div class="invisible hover:visible">
-                        <button id="arrowLeft" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
-                            <img src="./assets/img/left-arrow-svgrepo-com.svg">
-                        </button>                          
-                    </div>                  
-                    <div id="carousel" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                    <button id="arrowLeft1" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft1()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel1" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
@@ -82,7 +80,7 @@
                         <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
                     </div>
-                    <button id="arrowRight" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
+                    <button id="arrowRight1" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight1()">
                         <img src="./assets/img/right-arrow-svgrepo-com.svg">
                     </button>                    
                 </div>  
@@ -91,10 +89,10 @@
             <section class="pl-10 pt-16">
                 <p class="text-white font-bold">TV Shows</p>
                 <div class="flex items-center">
-                    <button id="arrowLeft" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft()">
+                    <button id="arrowLeft2" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft2()">
                         <img src="./assets/img/left-arrow-svgrepo-com.svg">
                     </button>                    
-                    <div id="carousel" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                    <div id="carousel2" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
                         <img src="./assets/img/thumbnails/Content_11.webp" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_7.webp" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_12.jpg" class="h-44 w-72 pr-5">
@@ -106,7 +104,7 @@
                         <img src="./assets/img/thumbnails/Content_11.webp" class="h-44 w-72 pr-5">
                         <img src="./assets/img/thumbnails/Content_7.webp" class="h-44 w-72 pr-5">
                     </div>
-                    <button id="arrowRight" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight()">
+                    <button id="arrowRight2" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight2()">
                         <img src="./assets/img/right-arrow-svgrepo-com.svg">
                     </button> 
                 </div>
@@ -204,59 +202,200 @@
 
             <section class="pl-10 pt-16">
                 <p class="text-white font-bold">Netflix Originals</p>
-                <div class="flex flex-row overflow-x-auto">
-                    <img src="./assets/img/thumbnails/Content_6.webp" class="h-96 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_15.jpg" class="h-96 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_4.jpg" class="h-96 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_9.jpg" class="h-96 w-72 pr-5">
-                    <img src="./assets/img/thumbnails/Content_5.jpg" class="h-96 w-72 pr-5">
+                <div class="flex items-center">
+                    <button id="arrowLeft3" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft3()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button> 
+                    <div id="carousel3" class="flex flex-row overflow-x-auto scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_6.webp" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_15.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_6.webp" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_15.jpg" class="h-96 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-96 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight3" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight3()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button> 
                 </div>
             </section>
 
             <section class="pl-10 pt-16">
                 <p class="text-white font-bold">Top 10</p>
-                <div class="flex flex-row items-center overflow-x-auto gap-10">
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_1.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_2.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_3.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_4.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_5.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_6.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_7.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_8.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_9.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
-                    <div><div class="flex w-48 h-44">
-                        <img src="./assets/img/numbers/top_10.png" class="h-28 w-32">
-                        <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
-                    </div></div>
+                <div class="flex items-center">
+                    <button id="arrowLeft4" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft4()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button> 
+                    <div id="carousel4" class="flex flex-row items-center overflow-x-auto gap-10 scroll-smooth">
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_1.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_2.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_3.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_4.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_5.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_6.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_7.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_8.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_9.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                        <div><div class="flex w-48 h-44">
+                            <img src="./assets/img/numbers/top_10.png" class="h-28 w-32">
+                            <img src="./assets/img/thumbnails/Content_10.jpg" class="h-32 w-32">
+                        </div></div>
+                    </div>
+                    <button id="arrowRight4" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight4()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button> 
                 </div>
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">Wake up</p>
+                <div class="flex items-center">
+                    <button id="arrowLeft5" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft5()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel5" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight5" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight5()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">You have been sleeping for too long</p>
+                <div class="flex items-center">
+                    <button id="arrowLeft6" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft6()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel6" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight6" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight6()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">We are worried</p>
+                <div class="flex items-center">
+                    <button id="arrowLeft7" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft7()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel7" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight7" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight7()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">Wake up please</p>
+                <div class="flex items-center">
+                    <button id="arrowLeft8" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft8()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel8" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight8" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight8()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
+            </section>
+
+            <section class="pl-10 pt-16">
+                <p class="text-white font-bold">I can't deal with this</p>
+                <div class="flex items-center">
+                    <button id="arrowLeft9" class="absolute bg-contain h-16 w-16 z-20" onclick="buttonLeft9()">
+                        <img src="./assets/img/left-arrow-svgrepo-com.svg">
+                    </button>                    
+                    <div id="carousel9" class="flex flex-row overflow-x-auto z-10 scroll-smooth">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_4.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_9.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_5.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_1.jpg" class="h-44 w-72 pr-5">
+                        <img src="./assets/img/thumbnails/Content_2.jpg" class="h-44 w-72 pr-5">
+                    </div>
+                    <button id="arrowRight9" class="absolute bg-contain h-16 w-16 z-20 right-0" onclick="buttonRight9()">
+                        <img src="./assets/img/right-arrow-svgrepo-com.svg">
+                    </button>                    
+                </div>  
             </section>
         </main>
 

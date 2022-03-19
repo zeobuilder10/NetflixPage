@@ -1,4 +1,5 @@
 window.onload = choosePic;
+window.onscroll = function() {scrollFunction()};
 
 var action = new Array(
     "./assets/img/action/action1.jpg",
@@ -49,9 +50,13 @@ function choosePic() {
     }
 }
 
-function choosePicComedy() {
-
-}
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.backgroundColor = "black";
+    } else {
+      document.getElementById("header").style.backgroundColor = "transparent";
+    }
+  }
 
 /* this is a stupid solution but at this point i'm running on 5h of sleep per day and i just can't
 keep up so that's that */

@@ -3,12 +3,4 @@ a recreation of the main netflix page
 
 ---------------------------
 
-I tried My damn best yet the responsive just isn't working, It is too late However to go back and do it now. I'll just have to correct it next week.
-
-Also "hover:" doesen't seem to work with my buttons which seems to always be displaying what's in the hover so basically i'm going crazy
- 
----------------------------
-
-here is the guide I used to create my header, from my Netflix account:
-
-![image_2022-03-04_154823](https://user-images.githubusercontent.com/81105172/156844917-6b73e838-6c7e-4299-bafe-87b5fa6d11e3.png)
+And as the sun began to set, I realised all was for nothing. Who would believe me when I will tell my story? Would anyone care? The world nearly ended and yet I do not feel like anything changed. Maybe I was too focused on my own business without realising what was happening. That must be it...

@@ -23,6 +23,17 @@ var comedy = new Array(
     "./assets/img/comedy/comedy9.jpg",
 );
 
+var voyage = new Array(
+    "./assets/img/voyage/voyage1.jpg",
+    "./assets/img/voyage/voyage2.jpg",
+    "./assets/img/voyage/voyage3.jpg",
+    "./assets/img/voyage/voyage4.jpg",
+    "./assets/img/voyage/voyage5.jpg",
+    "./assets/img/voyage/voyage6.jpg",
+    "./assets/img/voyage/voyage7.jpg",
+    "./assets/img/voyage/voyage8.webp",
+);
+
 function choosePic() {
     for (let i = 1; i < 11; i++) {
         var randomNum = Math.floor(Math.random() * action.length);
@@ -31,6 +42,10 @@ function choosePic() {
     for (let i = 1; i < 11; i++) {
         var randomNum = Math.floor(Math.random() * comedy.length);
         document.getElementById("comedyPic" + i.toString()).src = comedy[randomNum];
+    }
+    for (let i = 1; i < 11; i++) {
+        var randomNum = Math.floor(Math.random() * voyage.length);
+        document.getElementById("voyagePic" + i.toString()).src = voyage[randomNum];
     }
 }
 

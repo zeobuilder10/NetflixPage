@@ -8,13 +8,34 @@ var action = new Array(
     "./assets/img/action/action5.jpg",
     "./assets/img/action/action6.webp",
     "./assets/img/action/action7.jpg",
-    "./assets/img/action/action8.jpg",);
+    "./assets/img/action/action8.jpg",
+);
+
+var comedy = new Array(
+    "./assets/img/comedy/comedy1.jpg",
+    "./assets/img/comedy/comedy2.webp",
+    "./assets/img/comedy/comedy3.jpg",
+    "./assets/img/comedy/comedy4.webp",
+    "./assets/img/comedy/comedy5.jpg",
+    "./assets/img/comedy/comedy6.jpg",
+    "./assets/img/comedy/comedy7.jpg",
+    "./assets/img/comedy/comedy8.webp",
+    "./assets/img/comedy/comedy9.jpg",
+);
 
 function choosePic() {
     for (let i = 1; i < 11; i++) {
         var randomNum = Math.floor(Math.random() * action.length);
         document.getElementById("actionPic" + i.toString()).src = action[randomNum];
     }
+    for (let i = 1; i < 11; i++) {
+        var randomNum = Math.floor(Math.random() * comedy.length);
+        document.getElementById("comedyPic" + i.toString()).src = comedy[randomNum];
+    }
+}
+
+function choosePicComedy() {
+
 }
 
 /* this is a stupid solution but at this point i'm running on 5h of sleep per day and i just can't

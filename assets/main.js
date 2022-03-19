@@ -1,4 +1,21 @@
+window.onload = choosePic;
 
+var action = new Array(
+    "./assets/img/action/action1.jpg",
+    "./assets/img/action/action2.jpg",
+    "./assets/img/action/action3.jpg",
+    "./assets/img/action/action4.jpg",
+    "./assets/img/action/action5.jpg",
+    "./assets/img/action/action6.webp",
+    "./assets/img/action/action7.jpg",
+    "./assets/img/action/action8.jpg",);
+
+function choosePic() {
+    for (let i = 1; i < 11; i++) {
+        var randomNum = Math.floor(Math.random() * action.length);
+        document.getElementById("actionPic" + i.toString()).src = action[randomNum];
+    }
+}
 
 /* this is a stupid solution but at this point i'm running on 5h of sleep per day and i just can't
 keep up so that's that */

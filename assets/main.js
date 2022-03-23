@@ -56,7 +56,15 @@ function scrollFunction() {
     } else {
       document.getElementById("header").style.backgroundColor = "transparent";
     }
-  }
+}
+
+function videoPlay() {
+    document.getElementById("backgroundI").style.visibility = "hidden"
+}
+
+function videoStop() {
+    document.getElementById("backgroundI").style.visibility = "visible"
+}
 
 /* this is a stupid solution but at this point i'm running on 5h of sleep per day and i just can't
 keep up so that's that */

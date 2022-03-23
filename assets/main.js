@@ -60,10 +60,12 @@ function scrollFunction() {
 
 function videoPlay() {
     document.getElementById("backgroundI").style.visibility = "hidden"
+    document.getElementById("backgroundV").play()
 }
 
 function videoStop() {
     document.getElementById("backgroundI").style.visibility = "visible"
+    document.getElementById("backgroundV").pause()
 }
 
 /* this is a stupid solution but at this point i'm running on 5h of sleep per day and i just can't

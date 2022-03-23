@@ -149,7 +149,7 @@ function buttonRight9(){
 /* changing the images on hover de la pire des manières possible une meilleur facon de faire
    serais d'utiliser l'élément <video> avec un poster qui s'afficherais si elle n'est pas 
    hover, cependant je ne peut pas travailler après 17h aujourd'hui */
-   
+
 function imageHover1() {
     document.getElementById("image1-1").src = "./assets/img/video/monkey1.gif"
 }
@@ -179,25 +179,43 @@ function imageOut4() {
 }
 
 function imageHover5() {
-    
+   document.getElementById("image1-5").src = "./assets/img/video/monkey3.gif" 
+}
+function imageOut5() {
+    document.getElementById("image1-5").src = "./assets/img/thumbnails/Content_5.jpg"
 }
 
 function imageHover6() {
-    
+    document.getElementById("image1-6").src = "./assets/img/video/monkey4.gif" 
+}
+function imageOut6() {
+    document.getElementById("image1-6").src = "./assets/img/thumbnails/Content_4.jpg"
 }
 
 function imageHover7() {
-    
+    document.getElementById("image1-7").src = "./assets/img/video/monkey2.gif"
+}
+function imageOut7() {
+    document.getElementById("image1-7").src = "./assets/img/thumbnails/Content_9.jpg"
 }
 
 function imageHover8() {
-    
+    document.getElementById("image1-8").src = "./assets/img/video/monkey1.gif"
+}
+function imageOut8() {
+    document.getElementById("image1-8").src = "./assets/img/thumbnails/Content_5.jpg"
 }
 
 function imageHover9() {
-    
+    document.getElementById("image1-9").src = "./assets/img/video/monkey3.gif"
+}
+function imageOut9() {
+    document.getElementById("image1-9").src = "./assets/img/thumbnails/Content_1.jpg"
 }
 
 function imageHover10() {
-    
+    document.getElementById("image1-10").src = "./assets/img/video/monkey1.gif"
+}
+function imageOut10() {
+    document.getElementById("image1-10").src = "./assets/img/thumbnails/Content_2.jpg"
 }

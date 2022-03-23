@@ -144,3 +144,60 @@ function buttonRight8(){
 function buttonRight9(){
     document.getElementById('carousel9').scrollLeft += 1500;
 }
+
+
+/* changing the images on hover de la pire des manières possible une meilleur facon de faire
+   serais d'utiliser l'élément <video> avec un poster qui s'afficherais si elle n'est pas 
+   hover, cependant je ne peut pas travailler après 17h aujourd'hui */
+   
+function imageHover1() {
+    document.getElementById("image1-1").src = "./assets/img/video/monkey1.gif"
+}
+function imageOut1() {
+    document.getElementById("image1-1").src = "./assets/img/thumbnails/Content_1.jpg"
+}
+
+function imageHover2() {
+    document.getElementById("image1-2").src = "./assets/img/video/monkey2.gif"
+}
+function imageOut2() {
+    document.getElementById("image1-2").src = "./assets/img/thumbnails/Content_2.jpg"
+}
+
+function imageHover3() {
+    document.getElementById("image1-3").src = "./assets/img/video/monkey3.gif"
+}
+function imageOut3() {
+    document.getElementById("image1-3").src = "./assets/img/thumbnails/Content_4.jpg"
+}
+
+function imageHover4() {
+    document.getElementById("image1-4").src = "./assets/img/video/monkey4.gif"
+}
+function imageOut4() {
+    document.getElementById("image1-4").src = "./assets/img/thumbnails/Content_9.jpg"
+}
+
+function imageHover5() {
+    
+}
+
+function imageHover6() {
+    
+}
+
+function imageHover7() {
+    
+}
+
+function imageHover8() {
+    
+}
+
+function imageHover9() {
+    
+}
+
+function imageHover10() {
+    
+}
